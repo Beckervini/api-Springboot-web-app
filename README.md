@@ -1,10 +1,10 @@
 API Spring Boot Web App
 Uma API desenvolvida com Spring Boot, focada em demonstrar práticas de desenvolvimento backend em Java. Este projeto foi realizado como parte de um trabalho acadêmico.
 
- Sobre o projeto
-O API Spring Boot Web App é uma aplicação backend que expõe endpoints para cadastro e consulta de vagas (exemplo), utilizando padrões modernos de desenvolvimento com Spring Boot. Conta com camada de validação, integração com banco de dados via JPA, testes automatizados e uma página inicial simples.
+Sobre o projeto
+O API Spring Boot Web App é uma aplicação backend que expõe endpoints para cadastro e consulta de vagas, utilizando padrões modernos de desenvolvimento com Spring Boot. Conta com camada de validação, integração com banco de dados via JPA, testes automatizados e uma página inicial simples.
 
- Funcionalidades
+Funcionalidades
 CRUD de vagas (criar, listar, atualizar e deletar)
 
 Validação de dados de entrada
@@ -15,7 +15,7 @@ Página inicial acessível via navegador
 
 Estrutura RESTful
 
- Tecnologias Utilizadas
+Tecnologias Utilizadas
 Java 17+
 
 Spring Boot
@@ -30,24 +30,22 @@ Thymeleaf (para templates HTML)
 
 Testes JUnit
 
- Estrutura do Projeto
-css
-Copiar
-Editar
+Estrutura do Projeto
 src/
 └── main/
-    ├── java/
-    │   └── br/
-    │       └── com/
-    │           └── fiap/
-    │               └── sprint3/
-    │                   ├── controlllers/
-    │                   ├── models/
-    │                   └── repositories/
-    └── resources/
-        ├── application.properties
-        └── templates/
-            └── index.html
+├── java/
+│ └── br/
+│ └── com/
+│ └── fiap/
+│ └── sprint3/
+│ ├── controlllers/
+│ ├── models/
+│ └── repositories/
+└── resources/
+├── application.properties
+└── templates/
+└── index.html
+
 controlllers/: Controladores REST e da página inicial
 
 models/: Entidades do domínio (ex: Vaga)
@@ -58,28 +56,20 @@ templates/: Páginas HTML
 
 Como rodar o projeto localmente
 Clone o repositório
-
-bash
-Copiar
-Editar
 git clone https://github.com/seuusuario/api-Springboot-web-app.git
 cd api-Springboot-web-app
+
 Compile o projeto
-
-bash
-Copiar
-Editar
 ./mvnw clean install
-Inicie a aplicação
 
-bash
-Copiar
-Editar
+Inicie a aplicação
 ./mvnw spring-boot:run
+
 Acesse pelo navegador em http://localhost:8080 ou utilize ferramentas como Postman para testar a API.
 
 Obs.: Lembre-se de configurar o banco de dados no application.properties conforme sua máquina.
 
- Autor
+Autor
 Vinicius Becker
 Projeto desenvolvido para fins acadêmicos.
+
